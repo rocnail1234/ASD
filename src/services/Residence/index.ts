@@ -1,0 +1,6 @@
+export * from "./createResidence"
+export * from "./getAllResidences"
+export * from "./getResidence"
+export * from "./getExpenseByResidence"
+export * from "./getPaymentsByResidence"
+export * from "./editResidence"
