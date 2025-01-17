@@ -62,7 +62,7 @@ export const loginUserController = async (req: Request, res: Response) => {
     };
 
     const token = jwt.sign(payload, process.env.SECRET!, {
-      expiresIn: "7d",
+      expiresIn: 60 * 60 * 24 * 364,
     });
 
     return res.json({ user, token });
